@@ -17,8 +17,6 @@ namespace MyJsonWebToken.Controllers
                SymmetricSecurityKey(Encoding.UTF8.GetBytes(SECRET_KEY));
 
         private bool IsAdmin;
-        //aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-        //alvaro_siles_estrada_llave_secret
 
         [HttpGet]
         [Route("api/token/{username}/{password}")]
@@ -28,16 +26,35 @@ namespace MyJsonWebToken.Controllers
 
 
 
-            if (username == "alvaro" && password == "alvaro")
+            if (username == "admin" && password == "1234")
             {
                 IsAdmin = true;
-                return new ObjectResult(GenerateToken(username));
+                return new ObjectResult(GenerateToken(username, "admin"));
 
             }
-            else if (username == "julieta" && password == "julieta")
+            else
+              if (username == "alvaro" && password == "alvaro")
+            {
+                IsAdmin = true;
+                return new ObjectResult(GenerateToken(username, "admin"));
+
+            }
+            else if (username == "user" && password == "user")
             {
                 IsAdmin = false;
-                return new ObjectResult(GenerateToken(username));
+                return new ObjectResult(GenerateToken(username, "user"));
+
+            }
+            else if (username == "caja" && password == "caja")
+            {
+                IsAdmin = false;
+                return new ObjectResult(GenerateToken(username, "caja"));
+
+            }
+            else if (username == "venta" && password == "venta")
+            {
+                IsAdmin = false;
+                return new ObjectResult(GenerateToken(username, "venta"));
 
             }
             else
@@ -48,11 +65,11 @@ namespace MyJsonWebToken.Controllers
 
         }
 
-        private string GenerateToken(string username)
+        private string GenerateToken(string username, string tipo)
         {
             var token = new JwtSecurityToken(
                    claims: new Claim[] {
-                       new Claim("userType", IsAdmin? "admin" : "user"),
+                       new Claim("userType", tipo),
                        new Claim("user", username)
                    },
             //notBefore: new DateTimeOffset(DateTime.Now).DateTime,
