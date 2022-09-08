@@ -23,25 +23,18 @@ namespace MyJsonWebToken
     public class Startup
     {
         public Startup(IConfiguration configuration)
-        {
-            Configuration = configuration;
-        }
+        { Configuration = configuration; }
 
         public IConfiguration Configuration { get; }
 
         public void ConfigureServices(IServiceCollection services)
         {
-           services.AddMvc();
-
-
+            services.AddMvc();
             services.AddAuthentication(options =>
             {
                 options.DefaultAuthenticateScheme = "JwtBearer";
                 options.DefaultChallengeScheme = "JwtBearer";
-            })
-
-
-               .AddJwtBearer("JwtBearer", jwtOptions =>
+            }).AddJwtBearer("JwtBearer", jwtOptions =>
                 {
                     jwtOptions.TokenValidationParameters = new TokenValidationParameters()
                     {
@@ -57,12 +50,10 @@ namespace MyJsonWebToken
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
             if (env.IsDevelopment())
-            {
                 app.UseDeveloperExceptionPage();
-            }
+
             app.UseAuthentication();
             app.UseMvc();
-
         }
     }
 }

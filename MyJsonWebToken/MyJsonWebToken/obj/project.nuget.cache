@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "rqFot76ILoSdeJvQo44iRpUQezu/QRR6wv0hx/bbgZyMj4Jub3F+RWvNQxHZmOBIEanqaTW6TXVYpRE/6DC3cg==",
+  "dgSpecHash": "g8vgn42dn568FfAdqsOuJN25tHw4VRuHoqoTXXMVuUfD6t9pH3/jpm5svNT+JBH0CDzjBhHcBz5WyFnNmgILIA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\alvaro\\Desktop\\alvarito\\MyJsonWebToken\\MyJsonWebToken\\MyJsonWebToken.csproj",
+  "projectFilePath": "C:\\Users\\alvaro\\Documents\\GitHub\\Json-Web-Token\\MyJsonWebToken\\MyJsonWebToken\\MyJsonWebToken.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\alvaro\\.nuget\\packages\\jwt\\9.0.3\\jwt.9.0.3.nupkg.sha512",
     "C:\\Users\\alvaro\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\6.0.8\\microsoft.aspnetcore.authentication.jwtbearer.6.0.8.nupkg.sha512",

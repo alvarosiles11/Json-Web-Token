@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\alvaro\\Desktop\\alvarito\\MyJsonWebToken\\MyJsonWebToken\\MyJsonWebToken.csproj": {}
+    "C:\\Users\\alvaro\\Documents\\GitHub\\Json-Web-Token\\MyJsonWebToken\\MyJsonWebToken\\MyJsonWebToken.csproj": {}
   },
   "projects": {
-    "C:\\Users\\alvaro\\Desktop\\alvarito\\MyJsonWebToken\\MyJsonWebToken\\MyJsonWebToken.csproj": {
+    "C:\\Users\\alvaro\\Documents\\GitHub\\Json-Web-Token\\MyJsonWebToken\\MyJsonWebToken\\MyJsonWebToken.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\alvaro\\Desktop\\alvarito\\MyJsonWebToken\\MyJsonWebToken\\MyJsonWebToken.csproj",
+        "projectUniqueName": "C:\\Users\\alvaro\\Documents\\GitHub\\Json-Web-Token\\MyJsonWebToken\\MyJsonWebToken\\MyJsonWebToken.csproj",
         "projectName": "MyJsonWebToken",
-        "projectPath": "C:\\Users\\alvaro\\Desktop\\alvarito\\MyJsonWebToken\\MyJsonWebToken\\MyJsonWebToken.csproj",
+        "projectPath": "C:\\Users\\alvaro\\Documents\\GitHub\\Json-Web-Token\\MyJsonWebToken\\MyJsonWebToken\\MyJsonWebToken.csproj",
         "packagesPath": "C:\\Users\\alvaro\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\alvaro\\Desktop\\alvarito\\MyJsonWebToken\\MyJsonWebToken\\obj\\",
+        "outputPath": "C:\\Users\\alvaro\\Documents\\GitHub\\Json-Web-Token\\MyJsonWebToken\\MyJsonWebToken\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\alvaro\\AppData\\Roaming\\NuGet\\NuGet.Config",
