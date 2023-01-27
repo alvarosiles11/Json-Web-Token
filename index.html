@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+      }
+      main {
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        background-color: black;
+      }
+      div {
+        height: auto;
+        width: 100%;
+      }
+      h1 {
+        color: white;
+        text-align: left;
+        font-size: 128px;
+        font-weight: 800;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 0;
+        margin: 0;
+        padding-left: 18px;
+        /* border: 1px solid green; */
+      }
+
+      @media (min-width: 768px) and (max-width: 992px) {
+        h1 {
+          font-size: 98px;
+        }
+      }
+
+      @media (min-width: 320px) and (max-width: 425px) {
+        h1 {
+          font-size: 48px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <main>
+      <div>
+        <h1>JSON</h1>
+        <h1>WEB</h1>
+        <h1>TOKEN</h1>
+      </div>
+    </main>
+  </body>
+</html>
